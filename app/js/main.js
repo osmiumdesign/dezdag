@@ -42,9 +42,13 @@ ctcbtn.onclick = function (event) {
     event.preventDefault();
 };
 
-let menu = document.querySelector('.menu');
+let menu = document.getElementsByClassName('menu');
 let showmenu = document.getElementById('menu');
-menu.onclick = function (event) {
+menu[0].onclick = function (event) {
     event.preventDefault();
-    showmenu.classList.toggle("menu-open");
+        showmenu.classList.toggle("menu-open");
+};
+menu[1].onclick = function (event) {
+    event.preventDefault();
+        showmenu.classList.toggle("menu-open");
 };

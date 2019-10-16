@@ -30,7 +30,7 @@ header {
     height: 100px;
     display: flex;
     box-sizing: border-box;
-    max-width: 1200px;
+    width: 71rem;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -295,10 +295,6 @@ footer span {
 
 .menu-open {
     display: flex !important;
-}
-
-.menu-head {
-    width: 100%;
 }
 
 .menu-content {
