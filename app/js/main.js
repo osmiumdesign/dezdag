@@ -41,3 +41,10 @@ ctcbtn.onclick = function (event) {
     contact.classList.toggle("contacts-open");
     event.preventDefault();
 };
+
+let menu = document.querySelector('.menu');
+let showmenu = document.getElementById('menu');
+menu.onclick = function (event) {
+    event.preventDefault();
+    showmenu.classList.toggle("menu-open");
+};
