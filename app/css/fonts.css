@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../font/HelveticaNeueCyr-UltraLight.eot');
+	src: local('HelveticaNeueCyr-UltraLight.eot'),
+		url('../font/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('../font/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+		url('../font/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../font/HelveticaNeueCyr-Light.eot');
+	src: local('HelveticaNeueCyr-Light'),
+		url('../font/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+		url('../font/HelveticaNeueCyr-Light.woff') format('woff'),
+		url('../font/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../font/FuturaPT-Medium.eot');
+    src: local('Futura PT Medium'), local('FuturaPT-Medium'),
+        url('../font/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/FuturaPT-Medium.woff') format('woff'),
+        url('../font/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('../font/FuturaPT-Book.eot');
+    src: local('Futura PT Book'), local('FuturaPT-Book'),
+        url('../font/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../font/FuturaPT-Book.woff') format('woff'),
+        url('../font/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rolex';
+    src: url('../font/Rolex-Light.ttf');
+    src: local('Rolex'), local('Rolex'),
+        url('../font/Rolex-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
