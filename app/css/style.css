@@ -21,7 +21,9 @@ a {
 header {
     height: 100px;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
     z-index: 5;
     background: var(--body-color);
 }
@@ -102,7 +104,7 @@ header {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    padding-top: 60px;
+    margin-top: -100px;
 }
 
 .titlesection {
@@ -199,7 +201,6 @@ p {
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
-    line-height: 36px;
     /* or 150% */
     letter-spacing: 0.03em;
 }
@@ -341,21 +342,21 @@ footer span {
     z-index: 10;
 }
 
-#contacts > ul {
+#contacts>ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#contacts > ul > li {
+#contacts>ul>li {
     margin-bottom: 30px;
 }
 
-#contacts > ul > li:last-child {
+#contacts>ul>li:last-child {
     margin-bottom: 0px;
 }
 
-#contacts > ul > li > a {
+#contacts>ul>li>a {
     display: flex;
     align-content: center;
     align-items: center;
@@ -364,10 +365,150 @@ footer span {
     font-family: 'Futura PT Book', sans-serif;
 }
 
-#contacts > ul > li > a > img {
+#contacts>ul>li>a>img {
     margin-right: 10px;
 }
 
 .contacts-open {
     display: flex !important;
+}
+
+.product-search {
+    height: 58px;
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 20px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-search::placeholder {
+    color: #c4c4c4;
+}
+
+.product-search:active, .product-search:focus {
+    outline: none;
+    border: 1px solid #c4c4c4;
+}
+
+.product-search:hover {
+    border: 1px solid #c4c4c4;
+}
+
+input[type="search" i]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.product-list {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.product-list>li>a {
+    padding: 18px 25px;
+    background: #dedede;
+    border-radius: 2px;
+    color: var(--text-color);
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.product-list>li {
+    display: inline-block;
+    padding: 18px 0px;
+    margin-bottom: 5px;
+}
+
+.product-list>li>a:hover {
+    background: var(--company-color);
+    color: var(--body-color);
+}
+
+.active>a {
+    background: var(--company-color) !important;
+    color: var(--body-color) !important;
+}
+
+.product-title {
+    font-family: 'Futura PT', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product {
+    margin-bottom: 30px;
+}
+
+.product>img {
+    border-radius: 3px;
+    border: 1px solid #C4C4C4;
+}
+
+.product-description {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.product-href {
+    font-family: 'Futura PT', sans-serif;
+    display: inline-flex;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 18px 30px;
+    border: 2px solid var(--company-color);
+    color: var(--company-color);
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+.product-href:hover {
+    background: rgba(139, 195, 74, 0.1);
+}
+
+form {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-search+button {
+    position: absolute;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    border: none;
+    outline: none;
+    background: url('../img/icons/search.svg') transparent;
+    right: 20px;
+    top: calc(50% - 8px);
+}
+
+.product-href::after {
+    content: '';
+    background: url('../img/icons/arrow.png');
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-left: 25px;
 }
