@@ -512,3 +512,76 @@ form {
     width: 24px;
     margin-left: 25px;
 }
+
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    border: 1px solid #C4C4C4;
+}
+
+.open-product-title {
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Rolex', sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.open-product-description {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+    letter-spacing: 0.02em;
+}
+
+.product-contacts {
+    justify-content: center;
+    align-items: center;
+}
+
+.product-contacts>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-contacts>ul>li>h5 {
+    font-family: 'Futura PT', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    opacity: 0.54;
+}
+
+.product-contacts>ul>li {
+    margin-bottom: 20px;
+}
+
+.product-contacts>ul>li:last-child {
+    margin-bottom: 0px;
+}
+
+.product-contacts>ul>li>a {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 24px;
+    font-family: 'Futura PT Book', sans-serif;
+}
+
+.product-contacts>ul>li>a>img {
+    margin-right: 10px;
+}
