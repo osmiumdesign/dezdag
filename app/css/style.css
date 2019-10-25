@@ -10,7 +10,6 @@ body {
     margin: 0;
     position: relative;
     padding-bottom: 80px;
-    max-width: auto 1200px;
 }
 
 a {
@@ -585,3 +584,5 @@ form {
 .product-contacts>ul>li>a>img {
     margin-right: 10px;
 }
+
+@import url(../css/mobile.css);
